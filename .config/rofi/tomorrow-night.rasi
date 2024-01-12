@@ -1,0 +1,152 @@
+/**
+ * A modified version of the Paper theme
+ * to use the Tomorrow Night colorscheme
+ *
+ * The person who modified: deudz
+ *
+ * Original creator: Qball
+ * Copyright: Dave Davenport
+ */
+
+* {
+    bg: #1D1F21FF;
+    fg: #C5C8C6FF;
+    alt: #282A2EFF;
+    red: #CC6666FF;
+    aqua: #8ABEB7FF;
+    blue: #81A2BEFF;
+    grey: #969896FF;
+    green: #B5BD68FF;
+    orange: #DE935FFF;
+    purple: #B294BBFF;
+    yellow: #F0C674FF;
+    
+    spacing: 2;
+    background-color: @bg;
+    border-color: @blue;
+    anchor: north;
+    location: center;
+    font: "mono 14";
+}
+window {
+    transparency: "screenshot";
+    background-color: #00000000;
+    border: 0;
+    padding: 0% 0% 1em 0%;
+    x-offset: 0;
+    y-offset: -10%;
+}
+mainbox {
+    padding: 0px;
+    border: 0;
+    background-color: #00000000;
+    spacing: 1%;
+}
+message {
+    border: 2px;
+    padding: 1em;
+    background-color: @bg;
+    text-color: @fg;
+}
+textbox normal {
+    text-color: @aqua;
+    padding: 0;
+    border: 0;
+}
+listview {
+    fixed-height: 1;
+    border: 2px;
+    padding: 1em;
+    reverse: false;
+
+    columns: 1;
+    background-color: @bg;
+}
+element {
+    border: 0;
+    padding: 2px;
+    highlight: bold ;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+element normal.normal {
+    text-color: @grey;
+    background-color: @bg;
+}
+element normal.urgent {
+    text-color: @red;
+    background-color: @bg;
+}
+element normal.active {
+    text-color: @blue;
+    background-color: @bg;
+}
+element selected.normal {
+    text-color: @bg;
+    background-color: @blue;
+}
+element selected.urgent {
+    text-color: @bg;
+    background-color: @red;
+}
+element selected.active {
+    text-color: @bg;
+    background-color: @blue;
+}
+element alternate.normal {
+    text-color: @fg;
+    background-color: @alt;
+}
+element alternate.urgent {
+    text-color: @red;
+    background-color: @bg;
+}
+element alternate.active {
+    text-color: @bg;
+    background-color: @aqua;
+}
+scrollbar {
+    border: 0;
+    padding: 0;
+}
+inputbar {
+    spacing: 0;
+    border: 2px;
+    padding: 0.5em 1em;
+    foreground-color: @fg;
+    background-color: @bg;
+    index: 0;
+}
+inputbar normal {
+    foreground-color: @fg;
+    background-color: @bg;
+}
+mode-switcher {
+    border: 2px;
+    padding: 0.5em 1em;
+    background-color: @bg;
+    index: 10;
+}
+button selected {
+    text-color: @blue;
+}
+inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+prompt, entry {
+    text-color: @fg;
+}
+textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: var(fg);
+}
+error-message {
+    border: 2px;
+    padding: 1em;
+    background-color: @red;
+    text-color: @fg;
+}
