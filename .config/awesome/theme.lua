@@ -29,7 +29,7 @@ theme.useless_gap   = dpi(6)
 theme.border_width  = dpi(2)
 theme.border_normal = "#1d1f21"
 theme.border_focus  = "#81a2be"
-theme.border_marked = "#91231c"
+theme.border_marked = "#cc6666"
 
 -- There are other variable sets
 -- overriding the default one when
@@ -43,6 +43,9 @@ theme.border_marked = "#91231c"
 -- hotkeys_[bg|fg|border_width|border_color|shape|opacity|modifiers_fg|label_bg|label_fg|group_margin|font|description_font]
 -- Example:
 --theme.taglist_bg_focus = "#ff0000"
+
+theme.tasklist_bg_minimize = "#373b41"
+theme.tasklist_fg_minimize = theme.fg_normal
 
 -- Generate taglist squares:
 local taglist_square_size = dpi(4)
@@ -62,6 +65,7 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
+theme.menu_bg_normal = "#282a2e"
 theme.menu_submenu_icon = themes_path.."default/submenu.png"
 theme.menu_height = dpi(15)
 theme.menu_width  = dpi(100)
