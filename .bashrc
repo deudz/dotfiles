@@ -2,6 +2,7 @@
 export TERM=xterm-256color
 export EDITOR=vim
 export PATH=/usr/sbin:$PATH
+export GPG_TTY=$(tty) # i need to add this because signing fails if i dont
 
 # aliases
 alias ls="ls --color=yes --group-directories-first"
@@ -14,7 +15,7 @@ alias mkdir="mkdir -pv"
 alias grep="grep -i --color=yes"
 alias pgrep="pgrep --color=yes"
 
-alias bare="git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+alias bare="git --git-dir=$HOME/dotfiles --work-tree=$HOME" # git bare config
 
 # prompt
 PROMPT_COMMAND='if [ $? = 0 ]; then PS1="\[\e[32;1m\]\[\e[34;1m\]\w\[\e[0m\] $ "; else PS1="\[\e[31;1m\]\w\[\e[0m\] $ "; fi'
