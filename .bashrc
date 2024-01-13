@@ -11,6 +11,9 @@ alias la="ls -lah --color=yes --group-directories-first"
 
 alias ..="cd .."
 
+alias cp="cp -rv"
+alias mv="mv -v"
+alias ln="ln -sv"
 alias mkdir="mkdir -pv"
 alias grep="grep -i --color=yes"
 alias pgrep="pgrep --color=yes"
