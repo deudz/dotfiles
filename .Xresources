@@ -1,6 +1,6 @@
 ! TomorrowNight
-#define t_background            #1d1f21
-#define t_current_line          #282a2e
+#define t_background        #1d1f21
+#define t_current_line      #282a2e
 #define t_selection      	#373b41
 #define t_foreground      	#c5c8c6
 #define t_comment	     	#969896
@@ -13,9 +13,11 @@
 #define t_purple        	#b294bb
 
 ! URxvt settings !
-urxvt.scrollBar: false
-urxvt.geometry: 400x400
-urxvt.font: xft:FiraCode
+urxvt.scrollBar:    false
+urxvt.visualBell:   true
+urxvt.urgentOnBell: true
+urxvt.geometry:     400x400
+urxvt.font:         xft:FiraCode
 
 urxvt.foreground:   t_foreground
 urxvt.background:   t_background
