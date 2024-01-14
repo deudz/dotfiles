@@ -1,0 +1,12 @@
+$include /etc/inputrc
+
+# no case sensitivity in tab completion
+set completion-ignore-case on
+
+# zsh like completion
+set show-all-if-ambiguous on
+set colored-stats on
+"\C-i": menu-complete
+"\e[Z": menu-complete-backward
+
+# vim: syntax=bash:
