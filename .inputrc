@@ -6,6 +6,8 @@ set completion-ignore-case on
 # zsh like completion
 set show-all-if-ambiguous on
 set colored-stats on
+set menu-complete-display-prefix on
+set colored-completion-prefix on
 "\C-i": menu-complete
 "\e[Z": menu-complete-backward
 
