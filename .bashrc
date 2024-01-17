@@ -1,10 +1,14 @@
 # exports
 export TERM=xterm-256color
-export EDITOR=vim
+export EDITOR=nvim
 export PATH=/usr/sbin:$PATH
 export GPG_TTY=$(tty) # i need to add this because signing fails if i dont
 
 # aliases
+alias vim="nvim"
+alias rvim="nvim -R"
+alias vimdiff="nvim -d"
+
 alias ls="ls --color=yes --group-directories-first"
 alias ll="ls -l --color=yes --group-directories-first"
 alias la="ls -lah --color=yes --group-directories-first"
