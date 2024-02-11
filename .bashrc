@@ -1,14 +1,9 @@
 # exports
 export TERM=xterm-256color
-export EDITOR=nvim
 export PATH=/usr/sbin:$PATH
 export GPG_TTY=$(tty) # i need to add this because signing fails if i dont
 
 # aliases
-alias vim="nvim"
-alias rvim="nvim -R"
-alias vimdiff="nvim -d"
-
 alias ls="ls --color=yes --group-directories-first"
 alias ll="ls -l --color=yes --group-directories-first"
 alias la="ls -lah --color=yes --group-directories-first"
@@ -18,7 +13,6 @@ alias mv="mv -v"
 alias ln="ln -sv"
 alias mkdir="mkdir -pv"
 alias grep="grep -i --color=yes"
-alias pgrep="pgrep --color=yes"
 
 alias bare="git --git-dir=$HOME/dotfiles --work-tree=$HOME" # git bare config
 
