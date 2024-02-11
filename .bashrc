@@ -5,7 +5,7 @@ export GPG_TTY=$(tty) # i need to add this because signing fails if i dont
 
 # aliases
 alias ls="ls --color=yes --group-directories-first"
-alias ll="ls -l --color=yes --group-directories-first"
+alias ll="ls -lh --color=yes --group-directories-first"
 alias la="ls -lah --color=yes --group-directories-first"
 
 alias cp="cp -rv"
@@ -14,7 +14,20 @@ alias ln="ln -sv"
 alias mkdir="mkdir -pv"
 alias grep="grep -i --color=yes"
 
+alias df="df -h"
+alias free="free -h"
+
 alias bare="git --git-dir=$HOME/dotfiles --work-tree=$HOME" # git bare config
+
+alias gitc="git commit"
+alias gitp="git push"
+alias gita="git add"
+alias gitb="git branch"
+alias gits="git switch"
+alias gitf="git fetch"
+alias gitr="git rebase"
+alias gitst="git status"
+alias gitl="git log --oneline --graph --all"
 
 # shopt
 shopt -s autocd       # no need to type cd to change directories
