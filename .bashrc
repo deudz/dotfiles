@@ -1,9 +1,12 @@
 # exports
 export TERM=xterm-256color
-export PATH=/usr/sbin:$PATH
+export PATH=/usr/sbin:$HOME/.local/bin:$PATH
 export GPG_TTY=$(tty) # i need to add this because signing fails if i dont
 
 # aliases
+alias em="emacsclient -c -a 'emacs'"
+alias ema="emacsclient -nw -a 'emacs'"
+
 alias ls="ls --color=yes --group-directories-first"
 alias ll="ls -lh --color=yes --group-directories-first"
 alias la="ls -lah --color=yes --group-directories-first"
