@@ -1,4 +1,4 @@
-(setq initial-frame-alist '((width . 175) (height . 50)))
+(setq default-frame-alist '((width . 175) (height . 50)))
 
 (setq menu-bar-mode nil
       tool-bar-mode nil
