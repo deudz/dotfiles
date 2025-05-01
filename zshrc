@@ -15,6 +15,8 @@ ytmusic() {
   yt-dlp -x --audio-format opus --add-metadata --embed-thumbnail "$1" -o "$2"
 }
 
+export EDITOR="emacsclient -t"
+export VISUAL="emacsclient -c"
 export ALTERNATE_EDITOR="emacs"
 
 alias ema="emacsclient -t"
@@ -26,7 +28,7 @@ setopt PROMPT_SUBST
 PROMPT='%B%F{red}<%F{yellow}%n%F{green}@%F{blue}%m %F{magenta}%~%F{red}>%f${vcs_info_msg_0_} $%b '
 
 zstyle ":vcs_info:*" formats " %F{green}%b%f%m%u%c"
-zstyle ":vcs_info:*" actionformats " %F{green}%b%f%F{yellow}%a%f%m%u%c"
+zstyle ":vcs_info:*" actionformats " %F{green}%b%f %F{yellow}%a%f %m%u%c"
 zstyle ":vcs_info:*" check-for-changes true
 zstyle ":vcs_info:*" stagedstr "%F{yellow}*%f"
 zstyle ":vcs_info:*" unstagedstr "%F{red}!%f"
